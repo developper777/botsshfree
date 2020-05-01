@@ -9,15 +9,15 @@ cria a pasta bot e entra nela
 ```shell mkdir bot && cd bot```
 
 baixa o codigo do bot e extrai na pasta bot
-wget https://github.com/httd1/admysshbot/raw/master/%40admysshbot.zip -O bot.zip && unzip bot.php > /dev/null
+```shell wget https://github.com/httd1/admysshbot/raw/master/%40admysshbot.zip -O bot.zip && unzip bot.php > /dev/null```
 
 * Após baixar o codigo do bot entre na pasta bot e edite o arquivo bot.php colocando token do bot ip, usuario root e senha do servidor
 
 abre outra janela nessa pasta
-screen -S bot
+```shell screen -S bot```
 
 inicia o bot nessa janela
-php bot.php
+```shell php bot.php```
 
 sai da janela criada
-Ctrl+a d
+```shell Ctrl+a d```
