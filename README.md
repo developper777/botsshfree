@@ -1,6 +1,6 @@
 instalar dependencias que serão usadas pelo bot
 
-apt-get install php -y && apt-get install php-curl -y && apt-get install php-ssh2 -y && apt-get install redis -y && apt-get install php-redis -y && apt-get install screen -y
+''shell apt-get install php -y && apt-get install php-curl -y && apt-get install php-ssh2 -y && apt-get install redis -y && apt-get install php-redis -y && apt-get install screen -y''
 
 baixando arquivo usado pra criar usuarios ssh
 wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh
