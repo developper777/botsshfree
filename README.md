@@ -1,12 +1,12 @@
 instalar dependencias que serão usadas pelo bot
 
-''shell apt-get install php -y && apt-get install php-curl -y && apt-get install php-ssh2 -y && apt-get install redis -y && apt-get install php-redis -y && apt-get install screen -y''
+```shell apt-get install php -y && apt-get install php-curl -y && apt-get install php-ssh2 -y && apt-get install redis -y && apt-get install php-redis -y && apt-get install screen -y```
 
 baixando arquivo usado pra criar usuarios ssh
-wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh
+```shell wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh```
 
 cria a pasta bot e entra nela
-mkdir bot && cd bot
+```shell mkdir bot && cd bot```
 
 baixa o codigo do bot e extrai na pasta bot
 wget https://github.com/httd1/admysshbot/raw/master/%40admysshbot.zip -O bot.zip && unzip bot.php > /dev/null
