@@ -1,23 +1,5 @@
-instalar dependencias que serão usadas pelo bot
+*Você precisa criar um bot no @botfather para fazer a instalação
 
-```apt-get install php -y && apt-get install php-curl -y && apt-get install php-ssh2 -y && apt-get install redis -y && apt-get install php-redis -y && apt-get install screen -y```
+Instalação simples, apenas execute esse codigo a sua vps para que o seu bot começe a funcionar, durante a instalação será preciso fornescer algumas informações que o bot ira precisar.
 
-baixando arquivo usado pra criar usuarios ssh
-```wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh```
-
-cria a pasta bot e entra nela
-```mkdir bot && cd bot```
-
-baixa o codigo do bot e extrai na pasta bot
-```wget https://github.com/httd1/admysshbot/raw/master/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null```
-
-* Após baixar o codigo do bot entre na pasta bot e edite o arquivo bot.php colocando token do bot ip, usuario root e senha do servidor
-
-abre outra janela nessa pasta
-```screen -S bot```
-
-inicia o bot nessa janela
-```php bot.php```
-
-sai da janela criada
-```Ctrl+a d```
+```wget https://raw.githubusercontent.com/httd1/admysshbot/master/instalacao.sh -O instalacao.sh; mhmod +x instalacao.sh```
