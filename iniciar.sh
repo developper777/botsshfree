@@ -1,6 +1,10 @@
 clear
 
-mkdir bot && cd bot
+if [!-d "bot"]; then
+	mkdir bot
+fi
+
+cd bot
 
 if [ -e "dadosBot.ini" ] ; then
 
@@ -9,8 +13,6 @@ if [ -e "dadosBot.ini" ] ; then
 	echo "Bot foi iniciado e está executano em segundo plano"
 
 else
-
-rmdir bot
 
 echo "Instalando dependencias..."
 
