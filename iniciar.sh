@@ -8,7 +8,7 @@ cd bot
 
 if [ -e "dadosBot.ini" ] ; then
 
-	screen -X -S bot quit
+	screen -X -S bot quit > /dev/null
 	screen -dmS bot php bot.php
 	echo "Bot foi iniciado e está executano em segundo plano"
 
