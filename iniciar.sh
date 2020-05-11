@@ -1,6 +1,6 @@
 clear
 
-if [!-d "bot"]; then
+if [ ! -d "bot" ]; then
 	mkdir bot
 fi
 
