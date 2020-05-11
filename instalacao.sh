@@ -1,3 +1,4 @@
+clear
 echo "Instalando dependencias..."
 
 apt-get install php -y > /dev/null
@@ -22,10 +23,13 @@ ip=$(hostname -I)
 
 echo "Digite o toke do seu bot:"
 read token
+clear
 echo "Digite o nome de usuario do seu servidor (tem que ser usúario root):"
 read user
+clear
 echo "Digite a senha do seu servidor:"
 read senha
+clear
 echo "ip=$ip
 token=$token
 usuario=$user
@@ -35,4 +39,4 @@ limite=100" >> dadosBot.ini
 screen -dmS bot php bot.php
 
 echo "Pronto, o bot esta executando em segundo plano
-Bot por @httd1"
+Agradeça a @httd1"
