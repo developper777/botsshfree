@@ -1,3 +1,5 @@
+echo "Instalando dependencias..."
+
 apt-get install php -y > /dev/null
 apt-get install php-curl -y > /dev/null
 apt-get install php-ssh2 -y > /dev/null
@@ -8,11 +10,13 @@ apt-get install zip -y > /dev/null
 
 mkdir bot && cd bot
 
-wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh
+wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
 
 wget https://github.com/httd1/admysshbot/raw/master/%40admysshbot.zip -O bot.zip && unzip bot.zip > /dev/null
 
 rm dadosBot.ini > /dev/null
+
+clear
 
 ip=$(hostname -I)
 
