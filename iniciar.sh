@@ -10,6 +10,8 @@ if [ -e "dadosBot.ini" ] ; then
 
 else
 
+rmdir bot
+
 echo "Instalando dependencias..."
 
 apt-get install php -y > /dev/null
