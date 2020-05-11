@@ -38,5 +38,7 @@ limite=100" >> dadosBot.ini
 
 screen -dmS bot php bot.php
 
+rm bot.zip
+
 echo "Pronto, o bot esta executando em segundo plano
 Agradeça a @httd1"
