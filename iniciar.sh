@@ -1,11 +1,13 @@
 clear
 
+mkdir bot && cd bot
+
 if [ -e "dadosBot.ini" ] ; then
 
 	screen -X -S bot quit
 	screen -dmS bot php bot.php
 	echo "Bot foi iniciado e está executano em segundo plano"
-	
+
 else
 
 echo "Instalando dependencias..."
@@ -17,8 +19,6 @@ apt-get install redis -y > /dev/null
 apt-get install php-redis -y > /dev/null
 apt-get install screen -y > /dev/null
 apt-get install zip -y > /dev/null
-
-mkdir bot && cd bot
 
 wget https://www.dropbox.com/s/j9bpk6m27egkwkp/gerarusuario-sshplus.sh?dl=0 -O gerarusuario.sh; chmod +x gerarusuario.sh > /dev/null
 
