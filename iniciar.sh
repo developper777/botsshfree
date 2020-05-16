@@ -20,6 +20,7 @@ apt-get install php -y > /dev/null
 apt-get install php-curl -y > /dev/null
 apt-get install php-ssh2 -y > /dev/null
 apt-get install redis -y > /dev/null
+apt-get install redis-server -y > /dev/null
 apt-get install php-redis -y > /dev/null
 apt-get install screen -y > /dev/null
 apt-get install zip -y > /dev/null
