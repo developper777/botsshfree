@@ -16,6 +16,8 @@ else
 
 echo "Instalando dependencias..."
 
+apt-get update > /dev/null
+apt-get upgrade -y > /dev/null
 apt-get install php -y > /dev/null
 apt-get install php-curl -y > /dev/null
 apt-get install php-ssh2 -y > /dev/null
