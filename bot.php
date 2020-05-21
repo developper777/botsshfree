@@ -66,7 +66,7 @@ switch ($tlg->Text ()){
 	'callback_query_id' => $tlg->Callback_ID()
 	]);
 
-	if ($redis->dcabSize () == $limite){
+	if ($redis->dbSize () == $limite){
 
 		$textoSSH=$textoMsg->sshgratis->limite;
 
