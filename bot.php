@@ -64,7 +64,8 @@ switch ($tlg->Text ()){
 
 	$tlg->sendMessage ([
 		'chat_id' => $tlg->ChatID (),
-		'text' => 'Bot original @admysshbot por @httd1'
+		'text' => 'Foram criadas <b>'.$redis->dbSize ().'</b> contas nas ultimas 24h',
+		'parse_mode' => 'html'
 	]);
 
 	break;
@@ -91,7 +92,7 @@ switch ($tlg->Text ()){
 
 		$textoSSH="🇧🇷 Conta SSH criada ;)\r\n\r\n<b>Servidor:</b> <code>".$ip."</code>\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\n🤙 Cortesia do @YellowSSHBot";
 
-		$redis->setex ($tlg->UserID (), 43200, 'true'); //define registro para ser guardado por 24h
+		$redis->setex ($tlg->UserID (), 43200, 'true'); //define registro para ser guardado por 12h
 
 	}
 

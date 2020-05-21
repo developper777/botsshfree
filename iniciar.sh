@@ -14,14 +14,13 @@ if [ -e "dadosBot.ini" ] ; then
 
 else
 
-echo "Instalando dependencias..."
+echo "Instalando dependencias, aguarde..."
 
 #add-apt-repository ppa:ondrej/php > /dev/null 2>&1
 apt-get update > /dev/null 2>&1
 apt-get upgrade -y > /dev/null 2>&1
 apt-get install php -y > /dev/null 2>&1
 apt-get install php-curl -y > /dev/null 2>&1
-apt-get install php-ssh2 -y > /dev/null 2>&1
 apt-get install redis -y > /dev/null 2>&1
 apt-get install redis-server -y > /dev/null 2>&1
 apt-get install php-redis -y > /dev/null 2>&1
