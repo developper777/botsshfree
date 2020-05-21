@@ -60,6 +60,14 @@ switch ($tlg->Text ()){
 	]);
 
 	break;
+	case '/total':
+
+	$tlg->sendMessage ([
+		'chat_id' => $tlg->ChatID (),
+		'text' => 'Bot original @admysshbot por @httd1'
+	]);
+
+	break;
 	case '/sshgratis':
 
 	$tlg->answerCallbackQuery ([
@@ -81,7 +89,7 @@ switch ($tlg->Text ()){
 
 		exec ('./criarusuario.sh '.$usuario.' '.$senha.' 1 1');
 
-		$textoSSH="🇧🇷 Conta SSH criada ;)\r\n\r\n<b>Servidor:</b> <code>".SERVIDOR."</code>\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\n🤙 Cortesia do @YellowSSHBot";
+		$textoSSH="🇧🇷 Conta SSH criada ;)\r\n\r\n<b>Servidor:</b> <code>".$ip."</code>\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\n🤙 Cortesia do @YellowSSHBot";
 
 		$redis->setex ($tlg->UserID (), 43200, 'true'); //define registro para ser guardado por 24h
 
