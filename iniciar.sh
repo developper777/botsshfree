@@ -17,13 +17,17 @@ else
 echo "Instalando dependencias, aguarde..."
 
 #add-apt-repository ppa:ondrej/php > /dev/null 2>&1
+
 apt-get update > /dev/null 2>&1
 apt-get upgrade -y > /dev/null 2>&1
 apt-get install php -y > /dev/null 2>&1
-apt-get install php-curl -y > /dev/null 2>&1
-apt-get install redis -y > /dev/null 2>&1
-apt-get install redis-server -y > /dev/null 2>&1
 apt-get install php-redis -y > /dev/null 2>&1
+apt-get install php-curl -y > /dev/null 2>&1
+apt-get install php5 -y > /dev/null 2>&1
+apt-get install php5-redis -y > /dev/null 2>&1
+apt-get install php5-curl -y > /dev/null 2>&1
+apt-get install redis-server -y > /dev/null 2>&1
+apt-get install redis -y > /dev/null 2>&1
 apt-get install screen -y > /dev/null 2>&1
 apt-get install zip -y > /dev/null 2>&1
 
