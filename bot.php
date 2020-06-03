@@ -88,7 +88,7 @@ switch ($tlg->Text ()){
 		$usuario=substr (str_shuffle('ABCDEFGHIJKLMNOPQRSTUVWXYZ'), 0, 6);
 		$senha=mt_rand(11111, 999999);
 
-		exec ('./criarusuario.sh '.$usuario.' '.$senha.' 1 1');
+		exec ('./gerarusuario.sh '.$usuario.' '.$senha.' 1 1');
 
 		$textoSSH="🇧🇷 Conta SSH criada ;)\r\n\r\n<b>Servidor:</b> <code>".$ip."</code>\r\n<b>Usuario:</b> <code>".$usuario."</code>\r\n<b>Senha:</b> <code>".$senha."</code>\r\n<b>Logins:</b> 1\r\n<b>Validade:</b> ".date ('d/m', strtotime('+1 day'))."\r\n\r\n🤙 Cortesia do @YellowSSHBot";
 
