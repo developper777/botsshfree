@@ -41,7 +41,7 @@ clear
 
 ip=$(wget -qO- ipv4.icanhazip.com/)
 
-echo "Digite o toke do seu bot:"
+echo "Digite o token do seu bot:"
 read token
 clear
 echo "ip=$ip
@@ -53,6 +53,6 @@ screen -dmS bot php bot.php
 rm bot.zip
 
 echo "Pronto, o bot esta executando em segundo plano
-Agradeça a @httd1"
+Agradeça a @EQUIPEVIPSSH"
 
 fi
