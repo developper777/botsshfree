@@ -4,7 +4,6 @@ Instalação simples, apenas execute esse codigo a sua vps para que o seu bot co
 
 ```wget https://raw.githubusercontent.com/developper777/botsshfree/master/iniciar.sh -O iniciar.sh; chmod +x iniciar.sh; ./iniciar.sh```
 
-Caso faça alguma alteração no bot será preciso reinicia-lo usando ```./iniciar.sh```
 
 Com esse script você terá um bot de contas SSH gratís e funçional.
 
