@@ -15,3 +15,7 @@ __Pacotes nescessarios:__
 - redis-server
 - screen
 - zip
+
+nosso telegram 
+https://t.me/EQUIPEVIPSUPORTE
+
